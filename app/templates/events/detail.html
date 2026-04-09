@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% block title %}{{ event.title }} • {{ event.team.name }}{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h2 class="mb-0">{{ event.title }} {% if event.is_open %}<span class="badge text-bg-warning">Open</span>{% endif %}</h2>
+    <div class="text-muted">{{ event.team.name }} • {{ event.event_type|title }}</div>
+  </div>
+  <div>
+    {% if current_user.is_manager or (current_user.is_team_leader and current_user.team_id == event.team_id) %}
+    <a href="{{ url_for('main.event_edit', event_id=event.id) }}" class="btn btn-outline-sport">Edit</a>
+    {% endif %}
+  </div>
+  </div>
+
+<div class="row g-4">
+  <div class="col-lg-7">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white">Details</div>
+      <div class="card-body">
+        <div class="mb-2"><strong>When:</strong> {{ event.start_time.strftime('%A %d %B %Y %H:%M') }}</div>
+        <div class="mb-2"><strong>Where:</strong> {{ event.location or 'TBD' }}</div>
+        {% if event.opponent %}<div class="mb-2"><strong>Opponent:</strong> {{ event.opponent }}</div>{% endif %}
+        {% if event.capacity %}<div class="mb-2"><strong>Capacity:</strong> {{ event.capacity }} {% if event.capacity is not none %}(remaining {{ event.remaining_slots }}){% endif %}</div>{% endif %}
+        {% if event.updated_at %}<div class="text-muted small">Last updated {{ event.updated_at.strftime('%Y-%m-%d %H:%M') }}</div>{% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white">Your Availability</div>
+      <div class="card-body">
+        <form method="post" action="{{ url_for('main.rsvp', event_id=event.id) }}">
+          {{ rsvp_form.hidden_tag() }}
+          <div class="row g-2 align-items-end">
+            <div class="col-8">{{ rsvp_form.status.label(class="form-label") }} {{ rsvp_form.status(class="form-select") }}</div>
+            <div class="col-4 d-grid">{{ rsvp_form.submit(class="btn btn-sport") }}</div>
+          </div>
+        </form>
+        <hr>
+        <div class="small text-muted">Attending: {{ event.attending_yes|length }}{% if event.capacity %}/{{ event.capacity }}{% endif %}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card shadow-sm mt-4">
+  <div class="card-header bg-sport text-white">Attendance</div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="fw-bold mb-2">Yes</div>
+        <ul class="list-unstyled">
+          {% for a in event.attendances if a.status == 'yes' %}
+          <li>{{ a.user.name }} <span class="text-muted small">({{ a.user.email }})</span></li>
+          {% else %}
+          <li class="text-muted">None</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="fw-bold mb-2">Maybe</div>
+        <ul class="list-unstyled">
+          {% for a in event.attendances if a.status == 'maybe' %}
+          <li>{{ a.user.name }}</li>
+          {% else %}
+          <li class="text-muted">None</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="fw-bold mb-2">No</div>
+        <ul class="list-unstyled">
+          {% for a in event.attendances if a.status == 'no' %}
+          <li>{{ a.user.name }}</li>
+          {% else %}
+          <li class="text-muted">None</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

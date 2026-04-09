@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}New Team • Sports Organiser{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-7 col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-header bg-sport text-white">Create Team</div>
+      <div class="card-body">
+        <form method="post">
+          {{ form.hidden_tag() }}
+          <div class="mb-3">
+            {{ form.name.label(class="form-label") }}
+            {{ form.name(class="form-control", placeholder="e.g., City Strikers") }}
+          </div>
+          <div class="mb-3">
+            {{ form.sport.label(class="form-label") }}
+            {{ form.sport(class="form-control", placeholder="e.g., Football") }}
+          </div>
+          <div class="d-grid">
+            {{ form.submit(class="btn btn-sport") }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

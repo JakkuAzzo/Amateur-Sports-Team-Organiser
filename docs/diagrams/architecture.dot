@@ -1,0 +1,44 @@
+digraph ARCH {
+  rankdir=TB;
+  graph [fontname="Helvetica", bgcolor="white", splines=ortho, nodesep=0.5, ranksep=0.7];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=10, color="#1f2937", penwidth=1.2, fillcolor="#f8fafc"];
+  edge [fontname="Helvetica", color="#475569", arrowsize=0.8, penwidth=1.2];
+
+  subgraph cluster_client {
+    label="Client Layer";
+    color="#cbd5e1";
+    Web [label="Web Browser\n(Desktop / Mobile)"];
+  }
+
+  subgraph cluster_web {
+    label="Application Layer (Flask)";
+    color="#cbd5e1";
+    Routes [label="Blueprint Routes\n(auth.py, routes.py)"];
+    Forms [label="Forms & Validation\n(forms.py, Flask-WTF)"];
+    Auth [label="AuthN/AuthZ\nFlask-Login + Role checks"];
+    Logic [label="Business Logic\nRSVP, Open Sessions, Notifications"];
+  }
+
+  subgraph cluster_data {
+    label="Data Layer";
+    color="#cbd5e1";
+    ORM [label="SQLAlchemy Models\nUser, Team, Event, Attendance, Notification"];
+    DB [label="PostgreSQL / SQLite\nPersistent Storage"];
+  }
+
+  subgraph cluster_external {
+    label="External Services";
+    color="#cbd5e1";
+    Email [label="Formsubmit Email\n(Optional Notification Delivery)"];
+  }
+
+  Web -> Routes [label="HTTP(S) Requests"];
+  Routes -> Forms [label="Validate Input"];
+  Routes -> Auth [label="Session + Role Gates"];
+  Routes -> Logic [label="Execute Use Cases"];
+  Logic -> ORM [label="CRUD + Queries"];
+  ORM -> DB [label="SQL Operations"];
+  Logic -> Email [label="Send Optional Emails"];
+  DB -> Routes [label="Read Results"];
+  Routes -> Web [label="Rendered Templates / Redirects"];
+}

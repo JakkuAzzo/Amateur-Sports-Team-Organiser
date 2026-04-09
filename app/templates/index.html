@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% block title %}Welcome • Amateur Sports Organiser{% endblock %}
+{% block content %}
+<div class="row align-items-center g-4">
+  <div class="col-lg-5">
+    <h1 class="display-5 fw-bold text-sport hero-title-interactive">
+      <span class="keyword-token is-active" tabindex="0" data-copy="Organise every fixture, practice, and roster change from one place without message chaos.">Organise.</span>
+      <span class="keyword-token" tabindex="0" data-copy="Lead with clear visibility into attendance, open sessions, and who is ready for match day.">Lead.</span>
+      <span class="keyword-token" tabindex="0" data-copy="Play more often by filling open spots faster and keeping players aligned on time and location.">Play.</span>
+    </h1>
+    <p class="lead" id="hero-dynamic-copy">Organise every fixture, practice, and roster change from one place without message chaos.</p>
+    <a href="{{ url_for('auth.register') }}" class="btn btn-sport btn-lg me-2">Get Started</a>
+    <a href="{{ url_for('auth.login') }}" class="btn btn-outline-sport btn-lg">Log In</a>
+  </div>
+  <div class="col-lg-7">
+    <div class="hero-media-wrap shadow-sm">
+      <video class="hero-video" autoplay muted loop playsinline poster="{{ url_for('static', filename='media/hero-team.jpg') }}">
+        <source src="{{ url_for('static', filename='media/hero-training.mp4') }}" type="video/mp4">
+      </video>
+      <div class="hero-overlay">
+        <div class="hero-kicker">Community Sessions</div>
+        <div class="hero-caption">Track attendance, fill open spots, and keep every player in the loop.</div>
+      </div>
+    </div>
+    <div class="hero-credit small text-muted mt-2">Media: Pexels stock</div>
+  </div>
+</div>
+
+<div class="row g-4 mt-2 align-items-stretch">
+  <div class="col-lg-7">
+    <div id="landingHighlights" class="carousel slide shadow-sm landing-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#landingHighlights" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#landingHighlights" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#landingHighlights" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{{ url_for('static', filename='media/hero-team.jpg') }}" class="d-block w-100 landing-carousel-img" alt="Football team lineup on the field">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Built For Team Days</h5>
+            <p>Keep everyone aligned before kickoff.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='media/carousel-team-huddle.jpg') }}" class="d-block w-100 landing-carousel-img" alt="Team huddle and strategy moment">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Stronger Communication</h5>
+            <p>Leaders can update teams in seconds.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{{ url_for('static', filename='media/carousel-training-cones.jpg') }}" class="d-block w-100 landing-carousel-img" alt="Training equipment ready on a field">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Smarter Training Flow</h5>
+            <p>Sessions, attendance, and capacity in one workflow.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#landingHighlights" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#landingHighlights" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <section class="insight-panel h-100">
+      <h3 class="mb-3 text-sport">Why Teams Stick With It</h3>
+      <p class="mb-3">Sports Organiser removes the usual back-and-forth by giving managers, team leaders, and players one shared source of truth for sessions and attendance.</p>
+      <p class="mb-3">Use open sessions to fill missing spots fast, track RSVPs live, and notify members when event details change.</p>
+      <div class="small text-muted">Tip: Use this area later for club announcements, sponsor highlights, or weekly fixture summaries.</div>
+    </section>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  (function () {
+    const copyTarget = document.getElementById('hero-dynamic-copy');
+    const tokens = Array.from(document.querySelectorAll('.keyword-token'));
+    if (!copyTarget || tokens.length === 0) return;
+
+    const activate = (token) => {
+      tokens.forEach((t) => t.classList.remove('is-active'));
+      token.classList.add('is-active');
+      copyTarget.textContent = token.dataset.copy || '';
+    };
+
+    tokens.forEach((token) => {
+      token.addEventListener('mouseenter', () => activate(token));
+      token.addEventListener('focus', () => activate(token));
+    });
+  })();
+</script>
+{% endblock %}
+

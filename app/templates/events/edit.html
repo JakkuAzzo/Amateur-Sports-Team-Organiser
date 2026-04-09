@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Edit Event • {{ event.team.name }}{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-header bg-sport text-white">Edit {{ event.title }}</div>
+      <div class="card-body">
+        <form method="post">
+          {{ form.hidden_tag() }}
+          <div class="row g-3">
+            <div class="col-md-8">{{ form.title.label(class="form-label") }} {{ form.title(class="form-control") }}</div>
+            <div class="col-md-4">{{ form.event_type.label(class="form-label") }} {{ form.event_type(class="form-select") }}</div>
+            <div class="col-md-6">{{ form.opponent.label(class="form-label") }} {{ form.opponent(class="form-control") }}</div>
+            <div class="col-md-6">{{ form.location.label(class="form-label") }} {{ form.location(class="form-control") }}</div>
+            <div class="col-md-6">{{ form.start_time.label(class="form-label") }} {{ form.start_time(class="form-control") }}</div>
+            <div class="col-md-3">{{ form.capacity.label(class="form-label") }} {{ form.capacity(class="form-control") }}</div>
+            <div class="col-md-3 d-flex align-items-center">{{ form.is_open(class="form-check-input me-2") }} {{ form.is_open.label(class="form-check-label mb-0") }}</div>
+          </div>
+          <div class="d-grid mt-3"><button class="btn btn-sport" type="submit">Save</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block title %}{{ team.name }} • Sports Organiser{% endblock %}
+{% block content %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <div>
+    <h2 class="mb-0">{{ team.name }}</h2>
+    <div class="text-muted">{{ team.sport }}</div>
+  </div>
+  <div>
+    {% if current_user.is_manager or (current_user.is_team_leader and current_user.team_id == team.id) %}
+    <a href="{{ url_for('main.create_event', team_id=team.id) }}" class="btn btn-sport">New Event</a>
+    {% endif %}
+  </div>
+</div>
+
+<div class="row g-4">
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white">Roster</div>
+      <div class="card-body">
+        {% if team.members %}
+          <ul class="list-group list-group-flush">
+            {% for m in team.members %}
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <span>{{ m.name }} <span class="text-muted small">({{ m.role.replace('_',' ').title() }})</span></span>
+              <span class="small text-muted">{{ m.email }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No members yet.</p>
+        {% endif %}
+
+        {% if current_user.is_manager or (current_user.is_team_leader and current_user.team_id == team.id) %}
+        <hr>
+        <form method="post" action="{{ url_for('main.add_player', team_id=team.id) }}" class="row g-2">
+          {{ add_player_form.hidden_tag() }}
+          <div class="col-md-8">{{ add_player_form.email(class="form-control", placeholder="player@email.com") }}</div>
+          <div class="col-md-4 d-grid">{{ add_player_form.submit(class="btn btn-outline-sport") }}</div>
+        </form>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white">Events</div>
+      <div class="card-body">
+        {% if upcoming_events %}
+          <ul class="list-group list-group-flush">
+            {% for e in upcoming_events %}
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="fw-bold"><a href="{{ url_for('main.event_detail', event_id=e.id) }}" class="link-sport">{{ e.title }}</a> <span class="badge rounded-pill bg-sport ms-1">{{ e.event_type|title }}</span>{% if e.is_open %} <span class="badge text-bg-warning ms-1">Open</span>{% endif %}</div>
+                    {% if e.opponent %}<div class="small">vs {{ e.opponent }}</div>{% endif %}
+                    <div class="small text-muted">{{ e.location or 'TBD' }}</div>
+                  </div>
+                  <div class="text-nowrap small">{{ e.start_time.strftime('%b %d, %Y %H:%M') }}</div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No upcoming events yet.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

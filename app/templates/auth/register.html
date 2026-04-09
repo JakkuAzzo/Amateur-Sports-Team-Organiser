@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Register • Sports Organiser{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-header bg-sport text-white">Create Account</div>
+      <div class="card-body">
+        <form method="post">
+          {{ form.hidden_tag() }}
+          <div class="row g-3">
+            <div class="col-md-6">
+              {{ form.name.label(class="form-label") }}
+              {{ form.name(class="form-control", placeholder="Full name") }}
+            </div>
+            <div class="col-md-6">
+              {{ form.email.label(class="form-label") }}
+              {{ form.email(class="form-control", placeholder="you@example.com") }}
+            </div>
+            <div class="col-md-6">
+              {{ form.password.label(class="form-label") }}
+              {{ form.password(class="form-control", placeholder="Min 8 characters") }}
+            </div>
+            <div class="col-md-6">
+              {{ form.confirm.label(class="form-label") }}
+              {{ form.confirm(class="form-control", placeholder="Confirm password") }}
+            </div>
+            <div class="col-12">
+              <div class="alert alert-info mb-0 py-2" role="alert">
+                New accounts are created with the <strong>Player</strong> role. Team leaders and managers are assigned by an organiser.
+              </div>
+            </div>
+          </div>
+          <div class="d-grid mt-3">
+            {{ form.submit(class="btn btn-sport") }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

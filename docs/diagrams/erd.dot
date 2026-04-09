@@ -1,0 +1,19 @@
+digraph ERD {
+  rankdir=LR;
+  graph [fontname="Helvetica", bgcolor="white", splines=ortho, nodesep=0.5, ranksep=0.9];
+  node [shape=box, fontname="Helvetica", fontsize=10, color="#1f2937", penwidth=1.1, style="rounded,filled", fillcolor="#f8fafc"];
+  edge [fontname="Helvetica", color="#475569", arrowsize=0.8, penwidth=1.1];
+
+  Team [label="Team\nid (PK)\nname\nsport\ncreated_at\nmanager_id (FK -> User.id)"];
+  User [label="User\nid (PK)\nname\nemail (unique)\npassword_hash\nrole\ncreated_at\nteam_id (FK -> Team.id)"];
+  Event [label="Event\nid (PK)\ntitle\nopponent\nlocation\nstart_time\nevent_type\nis_open\ncapacity\ncreated_at\nupdated_at\nteam_id (FK -> Team.id)"];
+  Attendance [label="Attendance\nid (PK)\nuser_id (FK -> User.id)\nevent_id (FK -> Event.id)\nstatus\nupdated_at\nUNIQUE(user_id,event_id)"];
+  Notification [label="Notification\nid (PK)\nuser_id (FK -> User.id)\nmessage\nis_read\ncreated_at"];
+
+  Team -> User [xlabel="1 -> 0..* members"];
+  User -> Team [xlabel="0..* -> 0..1 manager"];
+  Team -> Event [xlabel="1 -> 0..* events"];
+  User -> Attendance [xlabel="1 -> 0..* attendance"];
+  Event -> Attendance [xlabel="1 -> 0..* attendance"];
+  User -> Notification [xlabel="1 -> 0..* notifications"];
+}

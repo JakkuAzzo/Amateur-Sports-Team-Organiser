@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard • Sports Organiser{% endblock %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-lg-7">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white">Your Teams</div>
+      <div class="card-body">
+        {% if teams %}
+          <ul class="list-group list-group-flush">
+            {% for team in teams %}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                  <div class="fw-bold">{{ team.name }}</div>
+                  <div class="text-muted small">{{ team.sport }}</div>
+                </div>
+                <div>
+                  <a class="btn btn-outline-sport btn-sm" href="{{ url_for('main.team_detail', team_id=team.id) }}">Open</a>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No teams yet.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <div class="card shadow-sm h-100">
+      <div class="card-header bg-sport text-white d-flex justify-content-between align-items-center">
+        <span>Upcoming Events</span>
+        <a class="text-white small" href="{{ url_for('main.open_sessions') }}">Open Sessions</a>
+      </div>
+      <div class="card-body">
+        {% if events %}
+          <ul class="list-group list-group-flush">
+            {% for e in events %}
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="fw-bold"><a href="{{ url_for('main.event_detail', event_id=e.id) }}" class="link-sport">{{ e.title }}</a> <span class="badge rounded-pill bg-sport ms-1">{{ e.event_type|title }}</span>{% if e.is_open %} <span class="badge text-bg-warning ms-1">Open</span>{% endif %}</div>
+                    <div class="small text-muted">{{ e.location or 'TBD' }}</div>
+                  </div>
+                  <div class="text-nowrap small">{{ e.start_time.strftime('%b %d, %Y %H:%M') }}</div>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No upcoming events.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

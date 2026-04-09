@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}New Event • {{ team.name }}{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-7">
+    <div class="card shadow-sm">
+      <div class="card-header bg-sport text-white">Create Event for {{ team.name }}</div>
+      <div class="card-body">
+        <form method="post">
+          {{ form.hidden_tag() }}
+          <div class="row g-3">
+            <div class="col-md-8">{{ form.title.label(class="form-label") }} {{ form.title(class="form-control", placeholder="e.g., Training") }}</div>
+            <div class="col-md-4">{{ form.event_type.label(class="form-label") }} {{ form.event_type(class="form-select") }}</div>
+            <div class="col-md-6">{{ form.opponent.label(class="form-label") }} {{ form.opponent(class="form-control", placeholder="e.g., Rivals FC") }}</div>
+            <div class="col-md-6">{{ form.location.label(class="form-label") }} {{ form.location(class="form-control", placeholder="e.g., City Stadium") }}</div>
+            <div class="col-md-6">{{ form.start_time.label(class="form-label") }} {{ form.start_time(class="form-control") }}</div>
+            <div class="col-md-6">{{ form.capacity.label(class="form-label") }} {{ form.capacity(class="form-control", placeholder="Optional max attendees") }}</div>
+            <div class="col-12">
+              <div class="form-check">
+                {{ form.is_open(class="form-check-input") }}
+                {{ form.is_open.label(class="form-check-label") }}
+              </div>
+              <div class="form-text">Enable this to allow authenticated users outside the team to RSVP.</div>
+            </div>
+          </div>
+          <div class="d-grid mt-3">{{ form.submit(class="btn btn-sport") }}</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
