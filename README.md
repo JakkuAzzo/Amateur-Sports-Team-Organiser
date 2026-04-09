@@ -5,6 +5,23 @@ Overview
 - Postgres database runs in Docker; app can run locally or in Docker.
 - Sports-themed, professional UI built with Bootstrap + custom CSS.
 
+Screenshots
+
+Dashboard (Desktop)
+![Dashboard desktop view](chapter4-dashboard-desktop-v3.png)
+
+Create Event (Desktop)
+![Create event desktop view](chapter4-create-event-desktop-v3.png)
+
+Open Sessions (Desktop)
+![Open sessions desktop view](chapter4-open-sessions-desktop-v3.png)
+
+Notifications (Desktop)
+![Notifications desktop view](chapter6-notifications-desktop-v2.png)
+
+Dashboard (Mobile)
+![Dashboard mobile view](chapter6-dashboard-mobile-v2.png)
+
 Background (Summary)
 - Many grassroots clubs rely on WhatsApp/spreadsheets, leading to missed info and unclear availability.
 - Existing tools are often complex/paid or ad-driven and not tailored to small UK teams.
