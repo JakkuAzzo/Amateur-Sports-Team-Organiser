@@ -67,5 +67,34 @@
       </div>
     </div>
   </div>
+  <div class="col-12">
+    <div class="card shadow-sm">
+      <div class="card-header bg-sport text-white">Team Messages</div>
+      <div class="card-body">
+        <form method="post" action="{{ url_for('main.post_team_message', team_id=team.id) }}" class="mb-3">
+          {{ message_form.hidden_tag() }}
+          <div class="mb-2">{{ message_form.message(class="form-control", rows="3", placeholder="Share an update with the team...") }}</div>
+          <div class="d-grid d-md-flex justify-content-md-end">{{ message_form.submit(class="btn btn-sport") }}</div>
+        </form>
+        {% if team_messages %}
+          <ul class="list-group list-group-flush">
+            {% for m in team_messages %}
+            <li class="list-group-item">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <div class="fw-semibold">{{ m.user.name }}</div>
+                  <div>{{ m.message }}</div>
+                </div>
+                <div class="small text-muted text-nowrap ms-3">{{ m.created_at.strftime('%Y-%m-%d %H:%M') }}</div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="text-muted mb-0">No team messages yet.</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

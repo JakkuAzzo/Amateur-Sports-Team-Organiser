@@ -1,6 +1,6 @@
 from datetime import datetime
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, SubmitField, SelectField, DateTimeLocalField, BooleanField, IntegerField
+from wtforms import StringField, PasswordField, SubmitField, SelectField, DateTimeLocalField, BooleanField, IntegerField, TextAreaField
 from wtforms.validators import DataRequired, Email, Length, EqualTo, NumberRange, Optional
 from .models import Role
 
@@ -44,3 +44,8 @@ class AddPlayerForm(FlaskForm):
 class RSVPForm(FlaskForm):
     status = SelectField("Your Availability", choices=[("yes", "Yes"), ("maybe", "Maybe"), ("no", "No")], validators=[DataRequired()])
     submit = SubmitField("Update")
+
+
+class TeamMessageForm(FlaskForm):
+    message = TextAreaField("Team Message", validators=[DataRequired(), Length(min=2, max=500)])
+    submit = SubmitField("Post Message")

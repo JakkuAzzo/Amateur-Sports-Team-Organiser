@@ -1,8 +1,8 @@
 from datetime import datetime
 from flask import Blueprint, render_template, redirect, url_for, flash, request, abort
 from flask_login import login_required, current_user
-from .forms import TeamForm, EventForm, AddPlayerForm, RSVPForm
-from .models import Team, User, Event, Role, Attendance, Notification
+from .forms import TeamForm, EventForm, AddPlayerForm, RSVPForm, TeamMessageForm
+from .models import Team, User, Event, Role, Attendance, Notification, TeamMessage
 from .utils import roles_required, notify_team, notify_users
 from . import db
 
@@ -76,13 +76,55 @@ def team_detail(team_id):
         if not current_user.team_id or current_user.team_id != team.id:
             abort(403)
     add_player_form = AddPlayerForm()
+    message_form = TeamMessageForm()
     now = datetime.utcnow()
     upcoming_events = db.session.execute(
         db.select(Event)
         .where(Event.team_id == team.id, Event.start_time >= now)
         .order_by(Event.start_time.asc())
     ).scalars().all()
-    return render_template('teams/detail.html', team=team, add_player_form=add_player_form, upcoming_events=upcoming_events)
+    team_messages = db.session.execute(
+        db.select(TeamMessage)
+        .where(TeamMessage.team_id == team.id)
+        .order_by(TeamMessage.created_at.desc())
+        .limit(20)
+    ).scalars().all()
+    return render_template(
+        'teams/detail.html',
+        team=team,
+        add_player_form=add_player_form,
+        upcoming_events=upcoming_events,
+        message_form=message_form,
+        team_messages=team_messages,
+    )
+
+
+@main_bp.route('/teams/<int:team_id>/messages', methods=['POST'])
+@login_required
+def post_team_message(team_id):
+    team = db.session.get(Team, team_id)
+    if not team:
+        abort(404)
+    if not current_user.is_manager and (not current_user.team_id or current_user.team_id != team.id):
+        abort(403)
+
+    form = TeamMessageForm()
+    if form.validate_on_submit():
+        msg = TeamMessage(team_id=team.id, user_id=current_user.id, message=form.message.data.strip())
+        db.session.add(msg)
+        db.session.commit()
+
+        teammate_ids = [m.id for m in team.members if m.id != current_user.id]
+        if teammate_ids:
+            notify_users(
+                teammate_ids,
+                f"New message in {team.name} from {current_user.name}: {msg.message}",
+                email_subject=f"Team message: {team.name}",
+            )
+        flash('Message posted to team feed.', 'success')
+    else:
+        flash('Message could not be posted. Please keep it between 2 and 500 characters.', 'warning')
+    return redirect(url_for('main.team_detail', team_id=team.id))
 
 
 @main_bp.route('/teams/<int:team_id>/add-player', methods=['POST'])
@@ -250,6 +292,37 @@ def open_sessions():
     ).scalars().all()
     events = [e for e in candidate_events if e.remaining_slots is None or e.remaining_slots > 0]
     return render_template('events/open.html', events=events)
+
+
+@main_bp.route('/events/<int:event_id>/remind', methods=['POST'])
+@login_required
+def remind_event(event_id):
+    event = db.session.get(Event, event_id)
+    if not event:
+        abort(404)
+    if current_user.is_manager is False and not (current_user.is_team_leader and current_user.team_id == event.team_id):
+        abort(403)
+
+    team_member_ids = [m.id for m in event.team.members]
+    pending_ids = []
+    for uid in team_member_ids:
+        attendance = db.session.execute(
+            db.select(Attendance).filter_by(user_id=uid, event_id=event.id)
+        ).scalar_one_or_none()
+        if not attendance or attendance.status in ('maybe', 'no'):
+            pending_ids.append(uid)
+
+    if pending_ids:
+        notify_users(
+            pending_ids,
+            f"Reminder: {event.title} is on {event.start_time.strftime('%Y-%m-%d %H:%M')} at {event.location or 'TBD'}. Please confirm availability.",
+            email_subject=f"Reminder: {event.title}",
+        )
+        flash(f'Reminder sent to {len(pending_ids)} team member(s).', 'success')
+    else:
+        flash('No reminder sent. All team members have already confirmed yes.', 'info')
+
+    return redirect(url_for('main.event_detail', event_id=event.id))
 
 
 @main_bp.route('/notifications')
