@@ -1,0 +1,580 @@
+
+
+
+FYP Handbook
+2025/6
+Contents
+Contents	2
+Tl;dr	4
+What is the Final Year Project?	4
+The logistics of the FYP	5
+The Panel of Experts	5
+Project Cafes	5
+The components of a project	6
+The schedule of the FYP	6
+The “Big Mega Document”	7
+Mitigating Circumstances and the FYP	8
+What we expect you to deliver in your submissions	9
+Report Chapter: Introduction and State of the Art Review	9
+Report Chapter: Analysis and Design	12
+Realisation (Artefact) and Realisation (Report Chapter)	14
+Validation, Testing and Critical Review	15
+User/usability testing	15
+System Testing	16
+Ongoing testing v “final” testing	17
+Critical Review	17
+Viva (in-person presentation)	18
+A “representative” viva	19
+Authorship	20
+General pointers for a successful FYP	21
+Avoid filler	21
+The right tool for the job	21
+Think “problem”, “process” and “project” level – not “program”, “code” or “tech”	22
+If you’re not a hardcore techie	22
+If you are a hardcore techie	23
+Marking Criteria and Process	25
+Introduction and State of the Art Review (Report Chapter #1)	25
+Analysis and Design (Report Chapter #2)	26
+Analysis	26
+Design	26
+Realisation - Report Chapter #3 AND the artefact you build	26
+Validation, Testing and Critical Review (Report Chapter #4)	27
+Viva	28
+
+Tl;dr
+
+If you read nothing else, read the following:
+
+	•	The structure of the project has changed considerably this academic year. Do NOT assume that the project will be like it has been in past years – particularly if you are a repeating student!
+	•	You will be expected to make regular submissions and if you fail to make a submission you will have missed as much as a 30% blob of marks!
+	•	In the vast majority of cases, you MUST attend and at least be credible at your viva for your report/artefact to be considered. If you hand in something that you clearly don’t know anything about, you won’t get the credit for it  (See Viva).
+What is the Final Year Project?
+
+The final year project represents the capstone of the last three years (four years, if you did a placement) of your academic life. It is where you showcase everything you’ve learned over the time you’ve spent on this course. The FYP requires you to bring together all the different topics, technologies and skills you’ve learned across (usually) 12 modules of study in a single, holistic project. In many cases, this will be the first time you’ve used these different skills that you’ve learned across many different modules of your course in conjunction with each other in a (close-to) real world scenario.
+
+For most of you, the FYP will likely be the largest project you have personally undertaken so far in your life. It is important not to underestimate how much work is involved! Generally, we assume that ANY module will involve at least 8 hours of work per week for a full-time student. The FYP is no exception – if you have not done 8 hours of work on your project in each week then you risk falling behind and will need to make up for it the next week! (Although do note that engagements with scheduled taught sessions and with the project panel do count as “work”.)
+
+If, at any point of the project, you find yourself in a position where external factors mean you are unable to put in 8 hours of work on your project for more than THREE consecutive weeks, it is extremely important that you speak to the module leader for the project. We will be able to help and advise you on the best course of action, BUT ONLY IF YOU TELL US ABOUT YOUR DIFFICULTIES! Without any information it is impossible for us to distinguish between a student who is not doing any work because they are slacking off, and a student who is struggling to get their work done for reasons beyond their control.
+
+This document will give you a detailed overview of what we will be expecting from you in the next (academic) year and what (hopefully) you’ll produce at the end of it.
+
+The logistics of the FYP
+
+The Panel of Experts
+
+In past years, each student was assigned a single member of staff as their designated academic supervisor. This led to major inconsistencies in the student experience and many students described it as a “lottery” – the student experience varied considerably from supervisor to supervisor.
+Following feedback from students and also external examiners, we have decided to do things a little differently. Rather than you being assigned a single academic point of contact for your whole project, who provides support and guidance and then ultimately marks your project, there will be a "Panel of Experts" - a group of people who you can go and visit about your project. This panel will then convene as a group once the projects are handed in to finalise and determine the marks for each project.
+
+The designated Panel of Experts for your FYP is:
+
+	•	Jad Abbass
+	•	Sarah Barman
+	•	Islam Choudhury
+	•	James Denholm-Price
+	•	Beryl Jones
+	•	Pushpa Kumarapeli
+	•	Paul Neve
+	•	Tariq Rahim
+	•	Farzana Rahman
+	•	Ahmed Shihab
+	•	Arslan Usman
+	•	Gordon Johnson
+	•	Peiling Yi
+	•	Michal Bosy
+	•	Nandita Pattnaik
+
+In theory, it would be possible to undertake your project entirely on your own! If you had attended every lecture, every workshop, excelled in your modules and subjects, and then continued to attend the bi-weekly FYP lectures, you would have absolutely everything you need to do a bang-up, first class project.
+
+The reality is that very, VERY few students are in that position – and even those that are can always benefit from a view from an expert. We anticipate that students will visit several different individuals as they progress through their project, and they might even visit different people for the same aspect of their project on different occasions – either to get a second opinion, or because of availability. 
+
+To make use of the Panel, you will need to attend the Project Cafes.
+
+Project Cafes
+
+The place to visit the experts is the weekly Project Cafes which will usually take place weekly in a computer lab on a Wednesday afternoon. The two hours of Project Café time should be part of the 6-8 hours you spend on your project in a given week anyway. However, the advantage of coming to Project Café is that you have the opportunity to get feedback and questions from the panel as you work.
+
+The panel is there to help you with YOUR work so you won't necessarily get much out of them if you turn up with nothing to show them. They can give pointers and advice on work you have done or that is in progress, but they won't be able to help with open ended questions like "what should I be doing?" or "what should I choose for my project?".
+
+Generally, the expectation is that someone who is looking for help with their project will have attended the previous scheduled lecture. If you did not, and the question you are asking was obviously addressed in the previous lecture, you will be directed to the video. The panel will not re-enact a lecture that you missed!
+
+We expect that you will work no less than 8 hours a week on your project. The project is a year-long endeavour, and you will need to put in that effort regularly throughout the academic year. Each week you do not put in 8 hours of work on your project, you will fall further behind.
+
+The components of a project
+
+The various components of the project are part of a single overarching portfolio, and these are broken down as follows into four components.
+
+	•	Introduction and State of the Art Review (10%)
+	•	Analysis and Design (25%)
+	•	Realisation (35%)
+	•	Validation, Testing and Critical Review (20%)
+	•	Viva (10%)
+	•	Authorship (meta-assessment)
+
+We’ll talk more about what these individual items are as we go through the document.
+
+The schedule of the FYP
+
+While all projects are different, there is a general overarching timetable that we assume everyone is following. We’ll be expecting the main milestones to be submitted at times that roughly coincide with the various breaks/holidays during the academic year.
+
+That said, it is important to think of the project as a single, holistic thing rather than as a “collection” of “bits”. Do not think of the individual submissions as separate; rather, you will be submitting a single project that grows over time.
+
+Date
+#
+Details
+Mark
+31st October
+1
+Introduction and State of the Art Review
+15%
+19th December
+2
+Analysis and Design
+25%
+13th February
+3
+Realisation 
+35%
+Week of March 30th
+4
+Validation, Testing and Critical Review
+(FINAL PROJECT HAND-IN and VIVA WEEK)
+15%
+
+
+Viva
+10%
+
+You will receive a mark for each submission via Canvas, but feedback on your submission can be obtained at the Project Café.
+
+(Please note these deadlines ALREADY include the grace period – please consider the “official” deadline for university regulatory periods to be a day earlier)
+
+The “Big Mega Document”
+
+One way to look at your FYP is to think of it as a story. Like all good stories, it will have a beginning, middle and an end. It will logically flow without any jumps or gaps in the narrative, and each section, each paragraph, each sentence should organically lead to the next.
+
+Your FYP report is where this crucial principle is most important. A common mistake made by some people that they think of the project as a collection of discrete activities. “Oh, I’ve got to do an introduction, then some use cases, some user stories, some wireframes” and so on. They will create separate documents for these things and work on these individual artefacts in isolation. Then, they mash these things together to create one single “report” that inevitably comes across as bitty and disjointed.
+
+At the core of every FYP, a student has effectively decided to solve (or at least contribute towards a solution to) a particular problem for a particular group of people somewhere in the world. So, to start the story you will need to the current situation that has led to this moment in human history where this problem exists for this particular group. You should review what led to this problem arising in the first place, along with previous work others have done that might be relevant to the problem.  The lessons you can learn from this review (e.g. mistakes others have made, good practices you might emulate) help inform the process in which you drill down into what functionality and characteristics any solution might need to include. That narrative step clearly informs the overarching design of any solution, which obviously in turn informs the building/construction of the solution. The thing that gets built will obviously need to be tested and evaluated, and then the end of the story is a critical evaluation of the project as a whole.
+
+Once again, your project is a STORY that flows from one part to the next. You cannot write the chapters of the story in isolation! They are part of a single whole narrative! 
+
+The document contains a cover page that you will ultimately complete and sign. After that, there is a contents page which can be automatically updated. Then, the document “proper” begins, and at the moment it will just contain headings as follows:
+
+Introduction and State of the Art Review
+Analysis and Design
+Realisation
+Testing, Validation and Critical Review
+
+and also a final heading for References. There is some placeholder text underneath each item which we’ll assume you’ll delete before handing in the final submission.
+
+THIS IS THE ONE DOCUMENT TO RULE THEM ALL. YOU ARE NOT PERMITTED TO USE ANY OTHER DOCUMENT FOR THE DURATION OF YOUR PROJECT. ANY NOTES, ANY WORK YOU DO ON YOUR PROJECT MUST BE KEPT IN THIS DOCUMENT. WHEN YOU SUBMIT EACH OF YOUR CHAPTERS, WE’LL BE EXPECTING YOU TO SUBMIT YOUR CURRENT VERSION OF THIS DOCUMENT.
+
+So each submission will not only contain the chapter you are submitting at that time, but also your previous “historical” chapters.
+
+FAILURE TO COMPLY WITH THIS MAY RESULT IN YOUR PROJECT BEING CONSIDERED AN F0 (NON-SUBMISSION).
+
+The bottom line here is that we do not want you to maintain a dozen different documents for the different sections of your project. When you are working on (say) the State of the Art Review section, type into your mega document underneath that heading. Even if you’re making note rather than writing finalised text, keep the notes in the appropriate section of the mega document. You can expand the notes later on, and evolve them into finalised text.
+
+The rationale for this is that we want you to get into the habit of thinking of the project as a single, holistic whole rather than a load of individual hoops to jump through. It is a holistic whole of several parts, granted, but it is important that it flows and that the story progresses naturally through that beginning, middle and end. So you must NOT keep a separate document for “State of the Art Review”, a separate document for “Analysis and Design”, etc, etc. If you do, you will inevitably think of them as separate things, and the narrative won’t flow.
+
+Now I’ve given you suggested top-level headings that map onto our marking criteria. However, these top-level headings will inevitably have subheadings. So, for example, your State of the Art might start with the standard procedures and workflows everyone in your chosen industry follows, then look at the legal requirements of people and companies in that industry and associated legislation, before moving onto existing applications. Such a discussion would naturally lend itself to subheadings like Industry standards, Legal requirements and legislation and Existing applications. And don’t be afraid to have sub-subheadings, if and when appropriate! Try to make your discussion flow so that the reader is taken on a journey from the very start of your thought processes all the way through your project.
+
+Also, please make use of the correct functionality of Microsoft Word. You are final year Computer Science students so we assume basic, office-level IT competency. Making something larger and bold does NOT make it a heading or subheading! We assume you know how to use the Styles functionality of Word – this IS something that will ultimately be assessed and will affect your mark if it’s not done correctly (as well as messing up your Contents page).
+
+Finally, make sure you update the TYPE YOUR NAME HERE and TYPE YOUR KNO HERE text in the footer! Unless, of course, your name is indeed TYPE YOUR NAME HERE 😊.
+
+Mitigating Circumstances and the FYP
+
+About mitigation in general; a clarification
+
+Even students with the best will in the world, who have got 90% plus for all their modules, who have a great work ethic, who routinely attend every lecture and every workshop and live and breathe their course will sometimes come up against an unexpected situation which impacts their ability to do their best work. To coin a phrase, "shit happens"!
+
+Now there is a perception that the phrase "Mitigating Circumstances" is synonymous with "extension to the deadline". This is incorrect. Mitigating Circumstances means "I can't make the deadline due to a situation outside of my control". The university will then offer a "mitigation", i.e. an alternative set of academic logistics that takes into account the fact that the reason why the student couldn't meet the published deadline was no fault of their own. What the mitigation will be depends on the assignment, the module, the time of year and any number of other factors. The mitigation is often an extension of a week or so, because this is often a simple thing to accommodate procedurally. However, mitigations can be anything from this simple extension to the offer of repeating an entire module without paying fees. When offering mitigations, we attempt to minimise the disadvantage to the student, but "disadvantage" is only really considered in terms of academic outcomes and financial cost. We do not necessarily consider simple convenience.  If, logistically, all we can offer is a repeat of the entire module the fact that having to repeat a whole year is a pain in the arse is not generally considered! We consider the fact that it does not cost you extra money and does not affect your final grade to be "no disadvantage"!
+
+The Mitigating Circumstances processes are also intended to accommodate students who encounter issues that are relatively brief in duration - a week or so, hence why the mitigation is often an extension of a similar duration. When an issue prevents you from engaging with your studies for a protracted period of time, the Mitigating Circumstances processes are not designed to deal with this. In such cases, we would normally encourage a student to take a formal break in studies, so that they can concentrate on resolving whatever it is that is causing them problems, and then re-engage with their course the following academic year when the difficulty has passed.
+
+Mitigation as it applies to the FYP in particular
+
+The FYP is a portfolio, and portfolio-based assignments have slightly different rules when it comes to mitigating circumstances.
+
+YOU CANNOT APPLY FOR MITIGATING CIRCUMSTANCES FOR ANYTHING OTHER THAN THE ENTIRE PORTFOLIO. IF YOU APPLY FOR MITIGATING CIRCUMSTANCES AT ANY POINT OF THE ACADEMIC YEAR YOU WILL BE MITIGATING THE ENTIRE PORTFOLIO. 
+
+PUT SIMPLY: IF YOU APPLY FOR MITIGATING CIRCUMSTANCES ANY MITIGATION WILL AMOUNT TO A DEFERAL OF THE ENTIRE MODULE – most likely via a penalty-free retake of the module during the summer retake period.
+
+Consider that ultimately, the FYP is a year-long project. If you were working on a year-long project in industry, and you took a week off for a bad cold, then your employer or client would not add on an extra week at the end of the project. Rather, the assumption would be that over such a long project there is enough slack in the schedule to be able to make up the odd missed week.
+
+Now of course, life is never that neat, and perhaps your illness occurs the week of a hand-in. To accommodate that, we will give you ONE extra life that you may use over the academic year.
+
+You already get a “late” extra week under regulations – i.e. on ANY assignment you may choose to hand in a week after the published deadline. Late work will be marked, but will be capped at 40%.
+
+However, for the Project, because of the portfolio nature and the mitigation rules being as they are, if you are ill or have a similar unexpected circumstance that would normally be considered under mitigation, we will waive the late period capping - meaning you may hand in the submission a week late WITH NO LATE CAPPING OR PENALTY APPLIED.
+
+Please note you only get ONE of these “lives”! After you use that up, you get no more! If you miss a second (or third, or fourth) submission then you’ll be late capped (and more than a week late and it won’t be marked).
+
+Bear in mind that mitigation is only ever really intended to cover the occasional, unexpected, brief disruption to normal academic life – you’re ill, or something happens that takes you out of academic contention for a short while. If you experience disruption that goes on for longer than a week or two, you are out of the scope of the mitigation rules. Such disruption would be considered a systemic issue that is disrupting your studies on a longer-term basis, and in such cases, a break in studies would be the expected solution – i.e. you take time off and return to your studies when the systemic issue has resolved.
+What we expect you to deliver in your submissions
+
+Report Chapter: Introduction and State of the Art Review
+
+The first chapter of your report should:
+	•	give the reader an overview of the problem space in which your project will operate;
+	•	examine relevant previous work (“state of the art”) that has been done in this space;
+	•	establish that (an aspect of) the problem remains unsolved and provide a rationale for your project;
+	•	define the aims and objectives for your project;
+
+Thus, in your first chapter you should examine the current state of the art in your chosen domain – ultimately, we want you to demonstrate that there is a justification for your project. Your project doesn’t have to be wholly original – many excellent FYPs have gone over already well-trod ground – but there does need to be a reason for doing it other than “I need to do an FYP”!
+
+When you look at previous work, you need to try to draw meaningful conclusions. Identify things that worked particularly well or particularly badly in relevant context – you can learn from these things and they can inform your project. Ultimately, by the end of the review it should be obvious that the previous work has shortcomings; perhaps it is not valid for certain groups of people, or in certain locations, or maybe there are fundamental flaws in those previous attempts to resolve your problem, or perhaps your particular problem has never been addressed and only similar problems have been previously tackled. Thus, if your State of the Art Review is a funnel, then what comes out of are the lessons that can be learned from previous work along a clearly defined need/rationale for your project to go ahead and undertake that further work to resolve a still-outstanding problem.
+
+Bear in mind that “previous work” doesn’t have to involve past attempts to solve exactly the same problem as you. For example, a past student was looking to develop an app where musicians could find other people to perform with. Although there weren’t many existing apps or services for precisely this purpose, at the end of the day their fundamental problem was a case of individual people needing to find suitable other people. The world is full of such services! So, they ended up examining numerous other “match-maker” type contexts and applications: dating apps and services, estate agents, “Check-A-Trade” type apps for plumbers etc, and so on. The resulting app borrowed many affordances from Tinder, (such as a swiping-based UI) but also some from estate agent web sites. So, when looking for previous work to cover, try to think a little outside the box.
+
+Remember, also, that most business problems and workflows will draw upon existing best practices. There will always be set processes in any workflow which are “standard” in that sector or discipline. For example, there are procedures and processes that all retailers have to do, regardless of what they sell. Depending on what they sell, there might be unique processes, records etc that they have to undertake. Your State of the Art Review should also, ideally, identify relevant processes and procedures in the sector in which your project takes place that will be relevant to your work. There will always be academic papers, white papers, legislation or other documentation which you can cite in order to establish these crucial processes. Such processes will again inform not only your subsequent analysis but also your aims and objectives.
+
+For truly excellent FYPs you should also consider examining academic literature i.e. journals, conference papers etc. Some well-crafted queries on Google Scholar can reveal some high-quality relevant literature that will give your review a theoretical gravitas and authoritative weight.
+
+When you do a good State of the Art Review, it’s like you pour all of that previous work into a funnel, and what comes out of the spout is basically:
+
+Once you have poured all that work into the proverbial funnel, what you should ideally have coming out of the spout is something along the lines of:
+
+	•	My project is going to operate in (my problem space)
+	•	All this stuff has been done previously in (this problem space)
+	•	None of it is appropriate in (my particular context) because of (reasons).
+	•	Consequently, this project will (into aims and objectives, which you should already have in draft form).
+
+Get that funnel right, and that’s the majority of your first chapter!
+
+The final part of the equation is your aims and objectives for the project. Students often define the aim of their project as “to develop an app that does (some functionality)”. That is not an aim at all. That’s an end result. The aim of a project will fundamentally encapsulate the WHY of the project.
+
+A good set of aims will set out what the overarching endgame is; what real-world situation will have been improved by the project. They set out the basic problem the project intends to solve in general terms and in most cases, should NOT describe application-level functionality or technological aspects of your project
+
+Let’s say that you came to me with a great idea for a project and declared “my aim is to build a left-handed spanner”. But that’s not your aim at all! Chances are, the reason why you want to build the left-handed spanner in the first place is because you or someone you know is a leftie who has difficulty using normal tools. So, by saying your aim is to build the left-handed spanner, you’re jumping the gun to declaring what the solution is rather than the problem. Maybe the ultimate solution to the leftie’s problem is to train them to use their right hand so they can use a conventional spanner! The aim needs to encapsulate the why of the problem not the what of the solution. 
+
+So, the aim of the left-handed spanner project might actually be more accurately described as:
+
+	•	To resolve difficulties encountered by left-handed individuals when screwing in and removing nuts and bolts
+
+Note how the aim does not in ANY way suggest what the solution to the problem might eventually be! It doesn’t mention a left-handed spanner at all! Ultimately, a good aim will leave enough room within the project itself to explore and determine how the aim will be achieved. That’s the point of the project – to investigate previous work that might be relevant to the problem, to confirm that it hasn’t been solved previously, and then if not, to analyse the problem and identify how a solution might be constructed, to design and build the solution, and then to test the solution.
+
+So your aim(s) should not (usually) mention an application, or a web page, or any specific bit of technology. It/they should simply encapsulate the overarching problem(s) that the project sets out to solve. Once again, the aim(s) describe the WHY not the WHAT.
+
+The aim(s) should also encapsulate what you hope to achieve by the end of your project; what real-world situation will have improved and, potentially, who it will have improved for. Often, you will only need one aim – one key thing that will change in the world, for the better, perhaps for a given group of people.
+
+In contrast, the objectives set out the milestones and steps you’ll take to achieve these aims. Once again, they should not be thinly disguised functional requirements. They are project-level milestones. So, objectives for the left-handed spanner project might be:
+
+	•	Review the evolution of tools throughout history
+	•	Examine existing left-handed specialist tools and evaluate their effectiveness
+	•	Evaluate current (non-left-handed) spanners in use by left-handed people
+	•	Design alternate spanners and/or usage guidelines for existing spanners, incorporating previous research outcomes
+	•	Build prototypes of alternate spanners and/or document new usage guidelines
+	•	Evaluate alternate spanners and/or guidelines in the field for effectiveness
+
+Generally, the objectives for most FYPs more or less follow the broad deliverables we’ll expect of you, i.e. State of the Art Review, Analysis and Design, Realisation, Testing and Critical review. The phrasing of your objectives will depend on your project, but there should be a close mapping between your objectives and the various “phases” or “milestones” of the project.
+
+
+Report Chapter: Analysis and Design
+
+The second chapter of your report and second submission will include your completed methodology and analysis. It is the Analysis where you begin to break down the problem and rationalise it in a way that will then allow you to go and design a solution. You will be expected to bring the tools you have acquired through three years of learning to this analysis – this will lean heavily on the Requirements Analysis module from the first year, with some methods from the various Professional Environments modules.
+
+Key in this chapter will be engagement with stakeholders – meaning REAL PEOPLE! We will be expecting you to go out and engage with them to discover what their requirements for any system will be BEFORE you do ANY coding! You’ll need to use industry-standard techniques to explore the requirements with your stakeholders and then apply the right methods to formally document and describe them as functional and non-functional requirements. Where appropriate, you might add value to your analysis through the application of business analysis techniques to consider and mitigate risk or determine areas or particular stakeholders to concentrate your efforts on. 
+
+The endpoint of your analysis section should be that you have sufficiently documented your requirements and considered the wider context of your project within its domain, thus enabling you to begin designing the broad brushstrokes of (usually) an application or high-fidelity prototype (i.e. your substantive artefact).
+
+You should NOT consider what follows a checklist to mindlessly follow. Don’t think that if you include every bulletpoint below, you’ll get a first! A large part of what we’re assessing you on is whether you understand how these techniques fit into a larger project, and when they will add value to an analysis process. Not every analysis technique belongs in every project! If you mindlessly just included all of these without any thought as to whether they are being used correctly or were even necessary for your project, you will probably LOSE marks (read Other general pointers, and particularly The right tool for the job for more on this!). However, your Analysis section might include the following:
+
+	•	Your stakeholders – who are you doing this for? Who will benefit? There are numerous analysis techniques which can give you insight into who is important, and who is not. If these add value to your work, you should consider using them.
+	•	Risks and obstacles that might pose a thread to your work. Methods such as SWOT, PEST, cost/benefit analysis might be helpful, but as mentioned above, make sure there is a point to these activities! Don’t just include (for example) a SWOT analysis for the sake of having a SWOT analysis. Think about what you’re trying to find out with each analysis method you apply. 
+	•	Discussions/communication with your users. Somehow, you need to get your users’ requirements out of their heads and into a form that you can document, and then work from to produce a design and ultimately an implementation/prototype. So, you will need to cover how you did this. Did you have interviews with your stakeholders/users? Perhaps you used questionnaires? How did you decide what to ask them? How many people were involved in the process? Try not to pollute your main report with pages and pages of data you gathered from stakeholders. Your main body text should draw out and discuss important conclusions that can feed into later parts of your document. However, you should include the granular detail of things like individual questionnaire responses or interview transcripts in an appendix so the reader can go and look at this detail if they wish.
+	•	Requirements modelling; articulate the functional requirements that have come out of your discussions with users. You might use formal methods such as user stories and use cases to describe your requirements, or visual modelling techniques such as a use case diagram. These needs to “join up” with the previous discussions. It is important that they do not seem to have been plucked out of thin air, but that they follow on from the discussions you’ve documented having with your users.
+	•	Priorities, e.g. using MoSCoW. Again, don’t pluck these out of thin air. It should be narratively obvious why a given priority has been assigned, either through previous discussion, or by explain why a given priority has been assigned when you assign it. Also bear in mind that there is no need to reproduce functional requirements that you’ve already specified in other forms. You could assign MoSCoW priorities to use cases, user stories or an existing table of functional requirements; don’t have yet another table of functional requirements titled “MoSCoW”!
+	•	Non-functional requirements, but once again, don’t just pull these out of your behind. If you are going to say “The system should respond to user input within 3 seconds”, explain WHY and cite appropriate reference(s) to back up your assertion that this is necessary in the context of YOUR project. If you are asserting that the app will need to be available for 24 hours a day, 7 days a week, tell the reader why, in the context of your project, it would be disastrous for there to be so much as a second of downtime!
+	•	Other (visual) models, such as sequence diagrams, activity diagrams, flowcharts etc. There is a crossover with design for some of these, but sometimes you might need to use one or more of these methods as part of analysis to fully explore/articulate a given requirement.
+
+Once you have clearly defined your requirements through a systematic analysis process, the next part of your project is the Design phase. Here, you will begin to turn requirements into a design narrative, encapsulated by design artefacts that can then inform the subsequent software development process or prototype implementation. A good project will exhaustively document the design narrative, giving the reader a clear indication of your design choices and why you made them. For maximum marks in this category, we would expect to see a clear design narrative emerge. It is not enough for you to work through a list of different techniques and include them in all your document – a good design-centric project will demonstrate that you understand how these all advance a narrative. 
+
+Different project types will draw upon different design methods. Someone on the UX guided pathway would normally be expected to cite appropriate UX and other design theory to support their choices, and making use of standard design methods and techniques to articulate your evolving design. Thus, we might expect to see artefacts like wireframes, personas, user journeys, hierarchical task analysis and other common UX methods. Guided pathways that have more of a “tech” slant, where the project artefact will be a piece of software, might also use wireframes to help turn the requirements into something visual, but then go on to use modelling techniques like sequence diagrams, activity diagrams, flowcharts, site maps. You would also usually do some data modelling, so class diagrams, ERDs, discussions of your chosen underlying technological platforms, and a proposed system architecture.
+
+Again, the warnings against “checklist thinking” still apply. Previous incarnations of the project module featured long comma separated lists of what people might potentially include in their report chapters, and those individuals who hadn't really understood how these methods worked and, more importantly, WHY we used them in the context of advancing a larger project. Such people would treat them like Pokemon - gotta collect 'em all! - and work through the list of methods one-by-one doing a tokenistic application of each one - regardless of whether its inclusion added value or, indeed, was even applied correctly.
+
+So, I've inevitably given such comma separated lists above - BUT DO NOT work through these comma-separated lists of artefacts above and think you have to include them ALL – especially if you don’t understand what some of them are, and perhaps more importantly if you don’t truly appreciate how something advances the overarching design narrative. We will be assessing you on whether you can make appropriate choices of methods. So, it is better to omit something than include it inappropriately! Instead, make a reasoned and rational choice based on your knowledge and understanding of these methods, and particularly how they fit into a project process, to decide whether you should make use of each one. And note that this is not an exhaustive list – you may choose to use other methods I’ve not name-dropped in the above text!
+
+Ultimately, the aim of your Design section is to serve as a resource that could be given to a professional software engineer and they would be able to use it to implement (at least at first cut of) the application itself.
+
+Realisation (Artefact) and Realisation (Report Chapter)
+
+Although “Realisation” appears once in the list of submission, it’s really TWO discrete things:
+	•	The actual thing you build as part of your project
+	•	The Report Chapter you write that describes the process of building that thing.
+
+By the end of your course, you will all have studied 12 modules in total. What we want you to do – and a large part of what we assess – is to use the skills from these 12 modules to build something, and document how you built that thing. Ideally, these two things will happen concurrently.
+
+What you build will depend on the project domain, your proposed career pathway and the modules you have chosen throughout your course. However, we expect EVERYONE to build a tangible artefact. In short, this means that virtually EVERY project will and MUST involve building a functional, proof-of-concept solution that attempts to fulfil the underlying aim of your project.
+
+To put it simply: EVERY project will and MUST involve “code” to some degree.
+
+“Computer Science is more than just programming, but programming is an absolutely central process for Computer Science”
+CAS Group, 2012
+
+What this actually means for you will depend on the optional modules you have chosen, but even those who have gone to great pains to avoid “programming” modules will (should!) have acquired sufficient skills to be able to build something original and new. You all did Python, Javascript and Java in Programming 1. You will all have exposure to HTML and CSS and have all built projects in PowerApps. In your optional modules, you will have chosen either Programming II OR Database-Driven Application Development, either of which will have equipped you to build an application.
+
+You are not required to stay within things you have been taught for your FYP. We give you a baseline, a foundation; the best FYPs (first class level!) are those that go beyond the taught material. Many students, as part of their Analysis and potentially Design will evaluate different development platforms and make the decision to build their app in a language/technology they have not previously learned. Ultimately, we expect that the project experience will teach you new things – do not think of it as just a rehash of the stuff you’ve previously covered in “regular” modules!
+
+It is important to bear in mind that, in many cases, this section of your report plus what you show during your Viva will be the main perception your two assessors have of the artefact you’ve created. It is quite possible that the assessors will not have the facilities to “try out” your artefact themselves – for example, perhaps you have written a mobile app for Apple phones but both of them have Android devices. For a research-oriented project, depending on your experimental approach, it might not be possible to “bundle” what you’ve done in a distributable form, so what you write about them might the only way of communicating your experiments to the assessors. 
+
+The short version, therefore, is that what you write about the fundamental thing you did or built in your project is at least as important as the thing itself!
+
+So, the Realisation chapter of your report must give the reader the information they need to be able to assess the scope, complexity and sophistication of what you’ve created and does not assume that they will be able to judge your artefact solely on its own merits. So, think of the Implementation section of your report as the place where you assure the reader that something meaningful has been produced or done through your efforts – something that is worthy of being the capstone of three (or four, if you did a placement) years of academic study!
+
+If this is a piece of software that you’ve developed, you should discuss your use of libraries and APIs, any third party modules you’ve used, why you chose them. You should give a critical discussion of coding issues, such as why you chose the approaches you did, possible alternative approaches you might have considered and why you rejected them, and whether your coding approaches follows best practices. There are sometimes bona fide reasons to do something different from the “proper” way of doing things – context is king, so justify any such deviations.
+
+There are many different ways to structure the Realisation section of your report. If you followed an iterative (Agile) methodology, where the implementation was clearly divided into different “sprints” or “timeboxes”, then you might be best suited organising this portion of the report to reflect that. So, in such cases you would effectively have a sprint-by-sprint breakdown of your Implementation. This also helps the reader ascertain that you did actually follow the methodology you claimed you were using! However, in some cases it might be more appropriate to write the Implementation section less like a story and more like a technical manual, where you explain how the finished article works. If you choose the latter approach you will need to somehow communicate how that finished article was the natural result of following your methodology and how it manifests your design narrative; the Realisation section cannot seem disconnected from the other sections of your report.
+
+Validation, Testing and Critical Review
+
+Validation and testing will often have two strands, user or usability testing and system testing. When dealing with an app or prototype, the former is about confirming whether the application or prototype you have created actually fulfils the functional needs of its end users, and whether it delivers a good user experience. In contrast, the latter is about determining whether the app you have built is robust, bug-free and scalable. An app can pass one strand with flying colours and still be hopeless with respect to the other strand. It is possible for an app that is rock-solid and never crashes to be completely useless to its target audience; equally, an app could provide the most beautiful user experience and be fully featured, but crash every other time someone tries to use it.
+
+User/usability testing
+
+For projects where you have designed and produced an application or high-fidelity prototype, you will almost certainly be expected to undertake a systematic user testing process. The purpose of such a process is to ascertain whether a typical end user can reasonably use the app/prototype to fulfils the user requirements articulated in the Analysis section.
+
+Your assessors will be looking for evidence of a clear test strategy, informed by industry best practices and that uses standard methods for us(er/ability) testing. A usability test usually involves designing a well-crafted scenario or scenarios where a person or persons perform set series of tasks with the app/prototype while observers watch and take relevant notes. The aim is to observe ordinary, typical users interacting with what you have built in a realistic manner, role-playing usage in the real world, so that you can identify any problem areas and either fix them or highlight them to be fixed later. If you cannot easily recruit potential real-world users into your testing strategy, consider alternative approaches such as guerrilla usability testing or undertaking a heuristic evaluation, or a cognitive walkthrough.
+
+If you did not take the UX modules, you should still be familiar with some of these techniques from Requirements Analysis and Design in the first year. However, the very least will be looking for is an attempt to ascertain whether the thing you have built fulfils the requirements you set out in the early chapters. One approach is to use artefacts from your analysis as a skeleton to build a user testing strategy around; for example, you might have tester(s) work through (e.g.) your original user stories and see if they can achieve them.
+
+Within this strand of testing, you might consider there being two sub-strands: firstly, does the app/prototype fulfil the functional requirements and design narrative set out by you previously? Secondly, what kind of user experience does the app provide? It is possible for an app to provide a raft of important functionality and still be a hellish experience for the typical user in day-to-day use! (Microsoft Teams, take a bow! 😊).
+
+Key things to include here is who undertook the testing, how you selected participants in the testing, what tests they conducted, why you chose these tests and what the results of the tests were. It is also important to discuss the results of your tests. Don’t just say “X passed and Y failed”. If some tests failed or only achieved a partial pass, what are the implications for your app and project?
+
+System Testing
+
+While user testing is about confirming that the application or prototype you have created actually fulfils the requirements of an end user, system testing is about confirming that the app you have built is robust, bug-free and scalable. You might perform stress testing, performance testing, black or white box testing, unit testing and so on. Ideally, your aim is to demonstrate that your app could be relied upon if deployed in a real-world environment. So, if you anticipated thousands of users accessing your app concurrently but only ever tested it with one connection at a time, this would not adequately demonstrate scalability. You should confirm that the different components of your app respond gracefully to unexpected inputs, either from an end-user or internally (e.g. if you have client/server components, what happens if one crashes unexpectedly when providing data to the other?).
+
+In an undergraduate FYP it might be impossible to conduct system testing that would be exhaustive by professional standards, so don’t be afraid to identify areas where your app might have benefited from more testing. Highlighting testing that would be advisable before deploying your work in the real world (but were unable to do as part of your project) still showcases academic knowledge and provides evidence of critical thinking on your part! If your project is design-oriented, and your “artefact” a high-fidelity prototype, to represent this strand you might consider designing a test strategy for the implementation team to follow.
+
+Ongoing testing v “final” testing
+
+Some methodologies might mean that you have testing embedded on an ongoing basis throughout your project. Most Agile approaches generally assume that there will be some kind of user involvement at the end of each iteration to gather feedback to inform the next iteration, and this might involve a (semi-)formal usability test of new functionality. You might be using a methodology which formally embeds system testing, such as test-driven development. And, even if there is nothing formal taking place you almost certainly will be doing some testing throughout your implementation process, even if that’s as simple as running your code and observing that it operates correctly, or working through your prototype to ensure that the interactions and flows occur in the right order.
+
+However, in most cases, we would generally still expect to see some kind of “final” testing of the end product. Testing of smaller components during an iterative process does not mean that the journey through the system will necessarily be trouble-free. The user experience of individual functions might be excellent, but issues might emerge when someone attempts to use them together to achieve a larger task. System level tests of smaller components might be invalidated by the combination of components when they are integrated together. Thus, in the vast majority of cases we would still expect to see some kind of testing of the final end product. In very, VERY rare cases, a methodology and project domain might involve such excellent embedded, ongoing testing throughout the project to make many of the traditional end-of-project tests redundant. In such cases, we would still expect to see a discussion which draws upon the testing done throughout the project to make a case that the application is robust, bug-free, provides an excellent user experience and fulfils the stated requirements.
+
+Critical Review
+
+The final strand is to consider the overall project with a critical lens. Note this is different from testing and/or validation the software or artefact you have created. In this last strand, we want you to consider whether the project as a whole was a success. 
+
+Perhaps the most important thing to tell you here is that this section is NOT about putting the most positive light possible on your work! If anything, you stand to earn more marks here by picking holes in it – or, if you like, by criticising it! This is a Critical Review after all!
+
+Thus, a common mistake made by many students is that they attempt to present their work as an absolute triumph, where nothing whatsoever went wrong for the entirety of the academic year and nothing could have been improved upon. These students think if they can convince a reader that everything went as well as it possibly could, the marks will reflect this. Similarly, many students offer some vague thoughts about timekeeping or over-estimating how hard some things might be, or their own skills, provide a few excuses for such shortcomings, and then wrap things up. Very few marks are gained by such ineffectual conclusions to a project.
+
+This can be one of the most important parts of your project! It showcases whether you can put your work into a proper perspective and context; in essence, whether you truly understand what you have done and why, or whether you were just mindlessly following a script.
+
+The best way to organise this is to call back to the early chapters of your report. Your Critical Review should usually be framed around your original Aims and Objectives. Did you achieve your original Aim(s)? If not, why not? What could you have done differently with the benefit of hindsight that might have helped achieve the aim(s), or at least get closer? Thinking over the project from the finish line, if you could go back and start again, would you do anything differently? Also look at your State of the Art Review and prior work/apps/products in your domain. Have you made a difference in that domain? Is there a new contribution to the domain as a result of your work? If not, have you provided a foundation for such a contribution to be made in the future? What future work would need to be done to build on that foundation?
+
+Future work is itself an important area for discussion in your final chapter. A common mistake made is to frame this as a list of future functional requirements. Inevitably, if your project involves a piece of software, sensible proposals for future work might well involve adding features to the app but this should not be only thing you consider. Think about what future work might be needed at a project level. Will you need to go back to your users and explore their needs further? Perhaps you might need to involve people in different roles or demographics to inform such future work.
+
+Your final chapter should also incorporate a reflective component, where you consider your own growth. Aspects of this will come out organically in what I’ve outlined previously; for example, you might well suggest things that could have been done differently as a result of what you’ve learned over the past year. But bear in mind we will specifically be looking for personal reflection upon your project as part of your critical review. This should not mean that you suddenly lapse into the first person “I” and make your final chapter a raft of personal observations and opinions – that would not be critical. But remember that your project is the capstone of your university career, and the final chapter is the capstone of the capstone.
+
+Viva (in-person presentation)
+
+IMPORTANT WARNING: IT IS MANDATORY TO ATTEND THE VIVA. FAILURE TO ATTEND THE VIVA WILL RESULT IN A ZERO MARK NOT ONLY FOR THE VIVA BUT FOR THE PROJECT AS A WHOLE. The viva is part of the validation process and without participation your mark will be F0 (non-submission).
+
+The academic term Viva comes from the Latin phrase, viva voce which means “living voice”. In modern academic parlance a viva is a presentation where you will showcase, explain, and answer questions about your work. Usually, you will present to your supervisor and second marker – nobody else will be present. FYP vivas are usually scheduled in a 30 minute slot and you should plan to present for 20 minutes followed by 10 minutes of questions and answers.
+
+Expect at least one of the questions/activities to involve making (small) changes to your artefact, so ensure that you have access to your development environment for the viva. I suggest you bring a laptop with your development environment already loaded and ready to go, and if this is not possible, then you should ensure that your project can be compiled/built/loaded on KU's MyDesktop Anywhere service with a minimum of effort. YOU are responsible for this! YOU WILL BE DEEMED TO HAVE F0'ed (non-submission) FOR THE VIVA (AND ALSO FOR THE PROJECT AS A WHOLE) IF YOU CANNOT ADEQUATELY DEAL WITH THIS REQUEST ON THE DAY.
+
+Your viva is not just a demonstration. Your viva should be considered a presentation of your project via an alternative medium. Your report presents your project in a written form; your viva should present your project in a visual/verbal form. So, in many respects the viva should cover the same ground as your project report does: relevant prior work, your aims and objectives for the project, how you went about the project (methodology), key outcomes of your analysis and design processes, what you built as a result of those processes, any testing you did, and a critical commentary on the project as a whole.
+
+This should not mean that you simply read out sections of your report and/or show Powerpoint slides onto which you’ve just copied and pasted diagrams from your report. (Indeed, a cardinal viva sin is if the report appears as part of what you’re presenting! 😊). The viva is a different presentational medium and you should tailor what and how you communicate because of this. You should think about the medium involved and make the most effective use of the viva so it communicates the aspects of your project the report is less able to.
+
+While the viva receives a mark in its own right it also has another – perhaps more important – purpose. In many cases, the viva will be the main – if not the only – means by which your markers are exposed to the actual thing you have built. While you will be expected to submit your code and/or a runnable form of any application/prototype you create, you cannot assume that your assessors will necessarily be in a position to closely examine this. You might, for example, have written an iOS app and your assessors both have Android phones and no access to Apple equipment. So, your assessors may look at the relevant portions of your report and consider what you have written there, along with what they see in the viva, as their main way of forming an academic judgement regarding the tangible artefact that your project has produced.
+
+A “representative” viva
+
+In addition to showcasing your work through a different presentational medium, one of the key purposes of a Viva is so that the researcher can demonstrate authorship and ownership of their work. The formal submission of your project as a whole is done at the Viva – no Viva, no project!
+
+If you have an issue on the day, then you will need to apply for Mitigating Circumstances using the usual university process. THIS IS THE ONE SCENARIO WHERE YOU SHOULD USE MITIGATION AND NOTE THAT IT WILL MITIGATE THE ENTIRE PROJECT.
+
+If such a mitigating circumstances claim is unsuccessful then you will be deemed to have not submitted the project, so you are STRONGLY advised to make every effort to attend especially if your mitigating circumstances lacks credible evidence to support a claim.
+
+We also expect (and require) vivas to be representative of your artefact and report. Generally, we take normal assessment nerves into account, and are aware that some people are not necessarily natural presenters. The marking criteria is mostly based around understanding of your own work, your chosen domain and your level of preparedness. As such, even with nervous presenters we would not normally expect there to be a significant difference between a student's performance at viva and for their main artefact/report. Where there is, this is generally considered a warning signal with respect to authorship.
+
+Where the mark for the viva is more than 20% less than the mark for the report/artefact, the following processes will apply:
+	•	If the viva is a fail (i.e. less than 4/10 or 40%) then the 0.2 authorship multiplier will be applied.
+	•	If the viva is not a fail (4/10 or 40%, or more) then the lowest mark will be awarded to BOTH the viva AND the report/artefact.
+
+For example:
+	•	Viva mark is 35% and report/artefact is 50%
+	•	Difference is not more than 20%, so both marks stand
+	•	Viva mark is 45% and report/artefact is 75%
+	•	Difference is more than 20%, but viva was not failed, therefore 45% is awarded for both Viva AND report/artefact
+	•	Viva mark is 35% and report/artefact is 75%
+	•	Difference is more than 20% AND the viva was failed. Authorship is not demonstrated, thus a 0.2 multiplier is applied to both marks, meaning a mark of 7% and 15% respectively
+
+Authorship
+
+In a nutshell, Authorship is an academic judgement made by the FYP assessment board as a whole. The default position is that everyone in the cohort gets the full mark for Authorship, and hopefully, that will indeed be the case.
+
+However, in extremely rare occasions an assessor may feel that the authorship of the work has not been adequately demonstrated. Perhaps there are discrepancies between the regular submissions and the final piece of work; perhaps chunks of the finished article have appeared suddenly, with no trail to suggest that the student produced them. Perhaps the Viva left question marks about whether the work was in fact, the student’s own; maybe they were unable to make changes to the code when asked, or even show a development environment with the code in (it happens!).
+
+In such cases, it may be that the initial marker brings their concerns to the assessment board when they convene. The assessment panel may then decide to apply the lower authorship multiplier to your work. If so, a multiplier of 0.2 will be applied, i.e. you will only receive ONE FIFTH of the marks that were otherwise allocated. Practically speaking, this will mean you fail the project (albeit not with a non-submission).
+
+The criteria for the LOWER multiplier is as follows; more than one (but not necessarily all) of these must be present for the lower multiplier to be discussed at the board
+	•	There are multiple missed submissions
+	•	There was little or no engagement by the student with the academic experts over the course of the academic year
+	•	There was little or no engagement with the bi-weekly lectures
+	•	The quality of the final FYP submission is disproportionate to the level of engagement, or with other previous work submitted by the student
+	•	At the viva, the student had a questionable level of knowledge of “their” work, or the viva was not attended (some of this is codified in the Viva brief text anyway!)
+	•	There were other markers in the submission that raised questions about the authorship of the work. These might include, but are not confined to: undocumented and uncredited use of AI, suspicious author and other document metadata, suspicious track changes data, document structures that differ from our recommended approach, inconsistent formatting or font switches, or other traces suggesting multiple authors and/or sources of documents.
+
+The simplest way to avoid falling foul of this is simply to DO THE WORK and BE METICULOUSLY HONEST when it comes to your project. Cards on the table: we are not looking to find reasons to mark people down. Quite the opposite: we are under pressure to mark people up! It would be literally impossible to fall foul of any of the above if you’re doing your project entirely legitimately.
+
+General pointers for a successful FYP
+Avoid filler
+
+All too often, we see projects where pages and pages are filled up with prose that has clearly been lifted from a textbook or lecture notes (albeit reworded to avoid it flagging up as plagiarism). Such “filler” shows absolutely no understanding whatsoever and accrues little, if any marks at all. Generally, there is content in your project which could be copied and pasted into ANY OTHER FYP report, it’s a safe bet that such content is “filler”.
+
+Instead of mindlessly paraphrasing generic content from textbooks, you should showcase your knowledge by discussing the theory through the lens of your own work. Don’t say, for example, “An Agile methodology was chosen as it achieves higher user satisfaction and puts value on regular feedback from the client”. That is filler. Instead, you might say “An Agile methodology was chosen because it provides a measure of flexibility to changing requirements. As this particular user group are diverse and have many different needs, they disagree considerably in their views and priorities. The flexibility of an Agile approach will allow us to accommodate potential false starts that might result from gathering requirements from a group that doesn’t always agree”. The first example shows you can paraphrase from a textbook but doesn’t show you understand any implications of what you’ve written. The second example you demonstrate not only that you know one of the key characteristics of Agile methodologies, but also that you understand this characterist by virtue of the fact you’ve evaluated whether it is appropriate whether it is appropriate in YOUR project’s context, and know that it will be beneficial in that context. (Of course, the second example also assumes that you’ve previously discussed why your users are so diverse and disagree so often!).
+
+Ultimately your FYP is just like life itself: if you don’t have anything to say then don’t say anything at all! Don’t feel you have to “pad out” what you’re writing to meet an arbitrary word count – you won’t get any additional marks for it and you might even lose marks. Write what you need to in order to articulate your points, document your work and detail your conclusions. If you find that you end up with a very short document, then there’s something more fundamental wrong that filler content isn’t going to help, and you should discuss this with your supervisor.
+
+The right tool for the job
+
+ This point again, follows on from the last. If you consider all the different skills, knowledge etc that you have learned over the last three years as the contents of a big toolchest, then a good FYP will showcase your mastery of those tools. It will show that you know when to use a given “tool”, that you can select the right tool for the job, and that you can use different tools in conjunction with each other to achieve a desired result.
+
+It is just as important to know when not to use a given tool. Every project is different so the right tools for their particular job will be different! However, a common mistake students make is that they try to include absolutely everything they’ve ever learned, even if a particular approach or technique adds little value to their particular project.
+
+Thus, it is important to avoid “tick-box thinking” in your FYP. Never include something in your project unless it has a clear, demonstrable point and value to YOUR project. Don’t just include a particular type of diagram because you’ve seen it in other students’ projects, or because you’ve seen it listed as an example of something that might gain credit in a certain marking criterion. If it’s not the right tool for your particular job, it may cost you marks rather than gaining you marks! If you don’t get anything useful out of the application of a certain technique or analysis method, you shouldn’t use it! If you don’t know why you’re including a particular analysis technique, if you aren’t deriving some clear value to the overarching narrative from it, it shouldn’t be there. Only use a particular technique if it is relevant and adds value to YOUR narrative. Including something just because you’ve seen it in other projects generally just highlights to the reader that you don’t understand it and don’t truly know how or when to apply it.
+
+For example, one of my pet hates in FYPs is The Gratuitous SWOT Analysis. These always follow the same format. I, as Mr Assessor, will be merrily reading along a narrative that’s doing largely OK for itself and then suddenly the author puts the handbrake on. Then, we see the heading SWOT Analysis and something like the below:
+
+Strengths
+Weaknesses
+Smells nice
+Pretty colours
+Is kind to their mum
+Has problems with punctuality
+Can’t last the full 90 minutes
+Opportunities
+Threats
+Lucrative marketplace
+Advertising increases sales
+There’s a sale at PC World
+Weather looks a bit rubbish out
+A bloke with a knife
+
+Often, this “analysis” will come with no context. The author will not set out precisely what it was they were analysing, why they performed this analysis, or what additional information they were trying to discover. Students undertake SWOT analyses of apps they’ve not even written yet, and take nothing away from the analysis. Even in the above facetious example, there is commentary to be had as a result of the analysis! For example, “in order to mitigate the threats the deployment of an umbrella and Kevlar body armour is proposed”. Such considerations can then be taken forward and inform later parts of the document. 
+
+So, never include a table, diagram or other visual model without some accompanying text to explain what it is you’re doing, why you’re doing it, how it fits into your narrative and what you learned from carrying it out. We ultimately will be looking to see if you can choose the right tools to explore your problem and advance your narrative. Don’t feel you have to use every tool in the toolchest!
+
+Think “problem”, “process” and “project” level – not “program”, “code” or “tech”
+If you’re not a hardcore techie
+
+The FYP looks to assess your mastery of 12 modules and only a few of these modules were explicitly about programming. So, there are plenty of places where you can excel without having to code Windows 11 from scratch. It is possible to create an excellent project without being a hot-shot programmer. For example, you can double-down on the design processes and principles using appropriate theory and best practices, meticulously documenting these, building a complex prototype in an appropriate tool, building a small high-fidelity prototype in HTML/CSS/possibly Javascript as a real-world proof of concept, and then doing comprehensive UX testing and evaluation on these artefacts. Ultimately, a good FYP will have complexity and depth, and code is not the only place that can exist within an FYP. So one route to a good project is to successfully tell the story of how you designed a solution to a problem. This might include what theory and best practices informed that design, the process of constructing a prototype of that design, how you designed a test plan and then implemented that test plan, and finally an exhaustive critical review of the project as a whole. 
+
+However, in many respects this is harder than a code-oriented project. Anyone (given a bit of study and willingness to apply themselves) can code. Some people are better than it than others but most people who have made it fair and square to the third year of a Computer Science degree (and who are willing to put in the hard work – often the stopping-point!) can probably code something to pass muster in an FYP if their project “story” hangs together. But without that bit of code to hang the story on, you truly need to be an expert when it comes to design-related learning outcomes. Every design decision you make will need to be informed with theory and/or best practices. There will need to be a clear, systematic design process at work. The prototype you build, even if it’s created in a tool like Adobe XD, will need to be sufficiently complex to allow an end-user to engage in meaningful testing. This means it will need to be interactive, to give the illusion that it performs the application functions sufficiently well to let a tester follow a user journey through to a conclusion. Without that complexity, what you have is a collection of pictures rather than a prototype – and we will expect a complex prototype even in a design-oriented project.
+
+If you are a hardcore techie
+
+Some of the techies out there will naturally gravitate towards the coding part of their project. They will be anxious to get cracking on building a bit of software that is complex and cool, using exciting new technologies. What many techies do is immediately launch their favourite IDE and start eagerly building the thing they’ve got rattling around in the back of their mind.
+
+THIS IS A MISTAKE.
+
+The FYP looks to assess your mastery of 12 modules and only a few of these modules were explicitly about programming! Remember, the project is a story and the part where you go on to build something is only one comparatively small part of that story. We expect you to show your mastery of
+
+No piece of software is written simply by a coder sitting down at a keyboard and banging away like an armed policeman. Software engineering is a process, and it’s a process that we are looking to assess your mastery of through the FYP. The code is only one, relatively small part of that process.
+
+Now some techies will think they can retrospectively write the “documentation” after the event. They will think it is possible to ignore the above, hack a bit of software up front and then fabricate the narrative – i.e. do the process essentially in reverse.
+
+THIS NEVER WORKS. Inevitably, there will be gaps in the fabricated narrative. It will be obvious, for example, that a requirements analysis process was never really done, or the iterations in the claimed methodology never took place, or there will be a disconnect between the user stories and the actual app, etc, etc.
+
+So, follow the process! Review the current state of the art, let that inform a requirement analysis process that drill down into what the problem actually needs in your prospective app. Formally design your solution, then implement it, test it, and then evaluate the process. Write the story in order – don’t write the end first and then try to make the beginning line up!
+
+Yes, this means you probably won’t start coding until at least a month or two in. Accept it! Your project will be the better for it!
+
+
+Marking Criteria and Process
+
+Your work will, in the first instance, be assessed by a randomly selected member of the FYP panel and they will assign a provisional mark. This mark will then be presented at the FYP Assessment Board to the panel as a whole. The individual member who marked your work will discuss the mark they have given, and the rest of the panel will then offer their views. The panel as a whole may then confirm the provisional mark, or may adjust it. Because other members of the panel are able to draw on different expertise and/or skills, they may be able to offer clarification or a different interpretation of an assessment the first marker made. Alternatively, the panel will generally look to normalise the marks of projects that are of a similar standard so that the marks are consistent. Bear in mind this is not solely a negative thing where we sit and take marks from you! Your marks might well go UP as part of this process!
+
+Your first marker and the panel in general will be looking for certain things in your work. Because all projects are different, and there are many different project types informed by very different guided pathways on the Computer Science course, these things are generic by design.
+
+The assessors will, ultimately, assign a mark based on their academic judgement of their work. These criteria will inform the assessment of your work. Do not consider these items a checklist to “tick off”. Some of the criteria are mutually exclusive and are intended for different types of project!
+
+Remember: over the your course we have taught you many different techniques, methods and skills. Consider all these things, across all your modules, like tools in a toolchest. Part of what we assess in the FYP is your ability to use different tools together, and to select the RIGHT tools for the job. Someone who works through the toolchest picking up each tool in turn with no real idea as to whether it’s relevant for the job at hand is not going to do well!
+
+Introduction and State of the Art Review (Report Chapter #1)
+
+	•	The opening chapter, as a holistic piece of writing, identifies the problem, project context and domain and makes these clear to the reader.
+	•	The discussion is relevant and covers a broad range of prior work across the problem/industry/domain/context including (where appropriate) existing apps/systems
+	•	Where the prior work is written, the sources cited are of a good standard and referenced correctly.
+	•	The narrative flows organically, with a clear beginning, middle and end point.
+	•	The review draws conclusions and key points that serve to inform the rest of the project.
+	•	The review dovetails into the project’s aims and objectives
+	•	(A) clear aim is provided, which encapsulates the overarching problem/domain in which the project will operate (rather than anticipating the final artefact)
+	•	Clear objectives are provided, which encapsulate key project milestones (rather than providing aspirational functionality for the final artefact)
+Analysis and Design (Report Chapter #2)
+
+Analysis
+
+	•	The analysis involves a systematic engagement with real people (prospective end users and/or stakeholders)
+	•	Appropriate methods are used to engage with participants, and these methods are documented.
+	•	Business/strategic analysis methods are used to further understand the context of the project.
+	•	The outcomes of engagements with participants are fully documented.
+	•	Requirements are modelled and documented using appropriate, industry standard methods.
+	•	The requirements modelled are clearly derived from the engagement with end-users.
+	•	The above is woven into a coherent discuss which advances the overarching narrative of the project report.
+
+Design
+
+	•	Appropriate process/system modelling techniques have been used to advance the design narrative.
+	•	Wireframes and/or other appropriate UX methods have been used to advance the design narrative.
+	•	The methods and models used in the design are relevant, correctly applied and accompanied by appropriate discussion which advances the overarching narrative.
+	•	The design is clearly informed by the previous Analysis and conducted in accordance with the stated Methodology.
+	•	The above is woven into a coherent design narrative that and provides a clear path forward for the realisation of an application, high-fidelity prototype, or other tangible deliverable.
+
+Realisation - Report Chapter #3 AND the artefact you build
+
+“Realisation” refers to the actual deliverable that we expect to emerge from your project – the “thing you build”, if you like. This might be a piece of software or app, a comprehensive set of results from a piece of academic research, a combination of these, or something else entirely! Because there are so many modules, guided pathways through the course, subdisciplines of computing and prospective career paths available to you, we cannot be more specific!
+
+Depending on your project, the depth of the Realisation might be encapsulated in something that is external to the report – for example, if you build an app, a large chunk of the work you have done will be represented by the app itself and the code that creates it. Occasionally, perhaps in research-oriented projects, perhaps more of the depth will be encapsulated in your report. In such projects, perhaps the outcome of your work is a set of results, or a set of guidelines or recommendations discussed in the context of the academic literature that inform them.
+
+The following is thus somewhat generic by design, but your assessors will want to see that:
+
+	•	The final deliverable is of sufficient complexity, depth and scope and reflects the amount of work we would expect to be put into an FYP.
+	•	Appropriate methods, tools, platforms etc are used in the deliverable’s construction and/or presentation.
+	•	The deliverable is discussed critically; alternative approaches are considered and the reason for rejection is justified in the context of the wider project.
+	•	The Realisation reflects the previously stated Analysis and Design chapters.
+
+Your assessor will therefore consider what you write in the report and anything you deliver above and beyond to the report as a SINGLE holistic item to be assessed. They will ultimately be looking for depth, i.e. is what you have delivered representative of around 300 hours total of work (which is how long you are expected to devote to any module), and is it an appropriate capstone to 3 years of academic study.
+
+A simple way to get a sense of scope is to consider what your project delivers up against what you’ve produced for other modules and courseworks throughout your course. We would, for example, expect a software artefact to go beyond assignments you might have done in first or second year modules – this is the capstone to your degree, after all! Similarly, we expect more than a simple retread of the courseworks you might have done in the UX modules.
+
+However, regardless of your project type, WE WILL ALWAYS EXPECT THERE TO BE A DISCRETE CHAPTER IN YOUR REPORT ABOUT YOUR REALISATION. IF YOU LEAVE THIS OUT OF YOUR REPORT THINKING “OH, I’VE WRITTEN SOME CODE, THAT’S MY REALISATION” THEN THE AS RISK GETTING ZERO FOR THIS ENTIRE ASPECT OF THE PROJECT.
+
+Remember that for some assessors, the report is ALL they will see of your work. The Realisation chapter needs to give enough of a flavour of the thing you have built for them to be able to place that thing you’ve built into a proper context.
+We will look at different kinds of projects in class and how they are best realised, so look for more specific pointers in the taught material.
+
+Validation, Testing and Critical Review (Report Chapter #4)
+
+	•	There are at least two distinct strands of testing (e.g. usability testing and application testing)
+	•	Appropriate methods have been used in testing, and are correctly applied.
+	•	There is a coherent, systematic test strategy.
+	•	Stakeholders/end users/other participants have been involved in usability testing.
+	•	The results of testing have been clearly documented, including any information captured from participants.
+	•	Conclusions and recommendations have been made as a result of testing.
+	•	The work is critically considered against the original aims and objectives stated for the project.
+	•	The work is critically considered in the context of the wider domain/sector/industry.
+	•	The work is critically considered against relevant prior work.
+	•	The student engages in personal reflection about the project, how it was managed and critically considers alternative approaches and their possible effects (positive or negative)
+	•	Future work is discussed and proposed, and critically considered in the context of how it would improve the existing work.
+
+
+Viva
+
+The main things the assessor will be looking for in your Viva is to establish that you are the author of your work, that you are knowledgeable (enough!) about your chosen domain, and that you can present your work in a professional manner. They will be looking for the following:
+
+	•	The student was knowledgeable about their own work and the context for it.
+	•	The student was well-prepared for the presentation.
+	•	Appropriate visual techniques were used to showcase the work.
+	•	The student presented a coherent (spoken) narrative.
+	•	The visual/verbal strands of the presentation complemented each other.
+	•	The student was able to respond to, engage effectively and (where necessary) spontaneously with the audience
+	•	The student successfully asserted authorship for the presented work.
